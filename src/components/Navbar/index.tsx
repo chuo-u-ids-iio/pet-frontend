@@ -3,7 +3,7 @@ import clsx from 'clsx'
 import Link from 'next/link'
 import { useState } from 'react'
 import style from './index.module.scss'
-import { IconClose, IconMenu } from '../Icons/generated'
+import { IconClose, IconMenu, IconPets } from '../Icons/generated'
 
 type MenuContent = {
   title: string
@@ -35,7 +35,10 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
       <div className={style.wrap}>
         <div className={style.inde}>
           <Link href="/" className={style.logo}>
-            <h1>Title</h1>
+            <h1>
+              <IconPets />
+              Pet
+            </h1>
           </Link>
           <nav className={style.menuItems}>
             <div className={style.invisibleOnMob}>
