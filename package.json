@@ -19,6 +19,7 @@
     "gen:sass-type": "typed-scss-modules src",
     "gen:icons": "node scripts/gen-icons.mjs",
     "dl-icons": "node scripts/dl-icons.mjs",
+    "gen:client": "openapi-typescript https://raw.githubusercontent.com/chuo-u-ids-iio/pet-backend/main/docs/openapi.json --output src/schema.d.ts",
     "postinstall": "pnpm run gen"
   },
   "dependencies": {
@@ -27,19 +28,21 @@
     "react-dom": "^18"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "@typescript-eslint/eslint-plugin": "^7.9.0",
     "@svgr/babel-plugin-remove-jsx-attribute": "8.0.0",
     "@svgr/babel-plugin-replace-jsx-attribute-value": "8.0.0",
     "@svgr/cli": "^8.0.1",
     "@svgr/plugin-jsx": "^8.0.1",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^7.9.0",
     "clsx": "^2.1.1",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "normalize.css": "^8.0.1",
     "npm-run-all2": "^6.2.0",
+    "openapi-fetch": "^0.9.7",
+    "openapi-typescript": "^6.7.6",
     "prettier": "^3.2.5",
     "sass": "^1.77.2",
     "stylelint": "^16.5.0",
