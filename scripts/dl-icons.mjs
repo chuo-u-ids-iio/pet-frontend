@@ -61,7 +61,7 @@ positionals.forEach(async (key) => {
   const url = generateUrl(
     values.style ?? defaultOptions.style,
     values.fill,
-    key
+    key,
   )
 
   const data = await spinner(`Downloading ${key}...`, async () => {
@@ -74,6 +74,6 @@ positionals.forEach(async (key) => {
     `${values['out-dir'] ?? defaultOptions['out-dir']}/${key}${
       values.fill ? ' Fill' : ''
     }.svg`,
-    data
+    data,
   )
 })
