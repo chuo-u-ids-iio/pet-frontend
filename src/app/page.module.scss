@@ -3,4 +3,24 @@
   padding: 0 10px;
   margin: 0 auto;
   background-color: #fff;
+
+  .hero {
+    margin: 100px 0;
+
+    .title {
+      font-size: 2rem;
+    }
+
+    .button {
+      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+      background-color: #007bff;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
 }
