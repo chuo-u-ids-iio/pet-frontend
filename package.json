@@ -17,9 +17,9 @@
     "fix": "pnpm run lint:fix && pnpm run lint-styles:fix && pnpm run format && pnpm run type-check",
     "gen": "run-p gen:*",
     "gen:sass-type": "typed-scss-modules src",
+    "gen:client": "node scripts/gen-client.mjs",
     "gen:icons": "node scripts/gen-icons.mjs",
     "dl-icons": "node scripts/dl-icons.mjs",
-    "gen:client": "openapi-typescript https://raw.githubusercontent.com/chuo-u-ids-iio/pet-backend/main/docs/openapi.json --output src/schema.d.ts",
     "postinstall": "pnpm run gen"
   },
   "dependencies": {
